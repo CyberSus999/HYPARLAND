@@ -1,0 +1,39 @@
+BACKUP
+sudo apt install timeshift 
+@timeshift
+--back up entire root item
+or 
+take a snapshot 
+
+GET GPU DETAILS 
+lspci | grep -i vga 
+  --get pci-id 
+lspci -s <pci-id> -v
+  --note the kernel details, drivers and modules
+
+SET UP NVIDIA DRIVERS
+sudo apt install nvidia-detect
+sudo apt install nvidia-drivers
+  reboot system
+nvidia-smi
+
+INSTALL DEPENDENCIES
+sudo apt install libdrm-dev python3-pip
+
+SET UP A PRECONFIGURED HYPRLAND ENVIRONMENT USING INSTALLER SCRIPT
+--visit JaKooLit on github @ JaaKooLit/Debian-Hyprland
+--clone the repo
+cd Debian-Hyprland
+chmod +x install.sh
+./install.sh
+--follow the steps
+
+NO BOOTUP
+ctrl +alt + f2
+--login in with credentials
+Hyprland
+--press enter
+
+SET UP SDDM
+--press on super key to open app launcher and open terminal
+sudo apt install sddm
